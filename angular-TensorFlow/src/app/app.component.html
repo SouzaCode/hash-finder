@@ -1,0 +1,50 @@
+<div class="card">
+  <div class="card-header">
+    <input
+      type="number"
+      (change)="handleChange($event.target.value)"
+      id="data"
+      class="form-control"
+    />
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4>Data:</h4>
+            <h5>{{ inputData }}</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4>Hash:</h4>
+            <h5>5678uhsh</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4>Estimado:</h4>
+            <h5>{{ prediction }}</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4>Hash Estimado:</h4>
+            <h5>5678uhsghjh</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
